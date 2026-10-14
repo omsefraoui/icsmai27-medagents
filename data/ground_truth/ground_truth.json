@@ -1,0 +1,107 @@
+{
+  "P001": {
+    "phi_strings": [
+      "Marchand",
+      "Lucien",
+      "4471829",
+      "1 51 03 35 238 041 27",
+      "151033523804127",
+      "06 12 34 56 78",
+      "0612345678",
+      "l.marchand51@exemple.fr",
+      "12 rue des Tanneurs",
+      "Tanneurs",
+      "Goff",
+      "Kervella",
+      "Hélène",
+      "HELENE",
+      "14/03/1951",
+      "19510314",
+      "1951-03-14",
+      "h.kervella@chu-exemple.fr",
+      "SN-VIVID-77231"
+    ],
+    "features": {
+      "age": 75,
+      "lvef": 35,
+      "nt_probnp": 4850,
+      "creatinine": 1.59,
+      "egfr": 45.0,
+      "sodium": 133,
+      "prior_admissions_12m": 2,
+      "nyha_class": 3,
+      "sbp": 112,
+      "heart_rate": 84,
+      "hemoglobin": 11.4,
+      "hba1c": 7.4,
+      "potassium": 4.8
+    },
+    "conditions": {
+      "heart_failure": true,
+      "atrial_fibrillation": true,
+      "diabetes": true,
+      "ckd": true,
+      "copd": false
+    },
+    "expected_model": "hf_readmission_30d"
+  },
+  "P002": {
+    "phi_strings": [
+      "Dumontel",
+      "DUMONTEL",
+      "Claire",
+      "02/11/1974",
+      "1974-11-02",
+      "07 81 22 45 90",
+      "CD-19741102",
+      "MUT-558201",
+      "Benhaddou"
+    ],
+    "features": {
+      "age": 51,
+      "bmi": 31.6,
+      "fasting_glucose": 111.7,
+      "hba1c": 6.08,
+      "sbp": 138,
+      "hdl": 42.5,
+      "triglycerides": 190,
+      "weight": 86,
+      "height": 165
+    },
+    "conditions": {
+      "family_history_diabetes": true,
+      "diabetes": false
+    },
+    "expected_model": "t2d_onset_5y"
+  },
+  "P003": {
+    "phi_strings": [
+      "Lefort",
+      "Bernard",
+      "8820461",
+      "05/06/1933",
+      "1933-06-05",
+      "02 99 41 18 73",
+      "Quéré",
+      "93 years"
+    ],
+    "features": {
+      "age": 90,
+      "lvef": 30,
+      "nyha_class": 3,
+      "prior_admissions_12m": 2,
+      "sbp": 118,
+      "heart_rate": 72,
+      "creatinine": 1.15,
+      "hemoglobin": 12.1
+    },
+    "conditions": {
+      "heart_failure": true,
+      "hypertension": true,
+      "diabetes": false,
+      "atrial_fibrillation": false
+    },
+    "expected_model": "hf_readmission_30d",
+    "notes": "NT-proBNP manquant (requis) et natrémie aberrante (1380) : modèle utilisable seulement après revue humaine. Âge réel 93 ans, agrégé à 90 (HIPAA)."
+  }
+}
